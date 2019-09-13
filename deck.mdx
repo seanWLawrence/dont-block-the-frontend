@@ -1,10 +1,46 @@
-# Don't block the frontend!
+export const theme = {
+  fonts: {
+    body: 'Roboto, sans-serif',
+    monospace: '"Roboto Mono", monospace',
+  },
+  colors: {
+    text: 'white',
+    background: '#e535ab',
+    primary: 'blue',
+  },
+  styles: {
+    root: {
+      margin: 0,
+    },
+  },
+};
 
-GraphQL Mockings
+<div style={{ background: 'white' }}>
+  <Appear>
+    <div>
+      <h1 style={{ color: '#e535ab', padding: '2em', paddingBottom: 0 }}>
+        Don't block the frontend!
+      </h1>
+      <h3 style={{ color: '#444' }}>GraphQL Mockings</h3>
+    </div>
+    <p
+      style={{
+        color: '#444',
+        paddingBottom: '2em',
+        fontSize: '2.5  rem',
+        fontStyle: 'italic',
+      }}
+    >
+      by Sean Lawrence
+    </p>
+  </Appear>
+</div>
 
 ---
 
-# Traditional workflow
+<div style={{ background: 'white' }}>
+  <h1 style={{ color: '#e535ab', padding: '2em' }}>Traditional workflow</h1>
+</div>
 
 ---
 
@@ -98,7 +134,10 @@ import { Appear } from 'mdx-deck';
 
 ---
 
-# And we wait...
+<Appear>
+  <h1> Aaaaaaaand we wait...</h1>
+  <h2> One week later...</h2>
+</Appear>
 
 ---
 
@@ -161,5 +200,9 @@ import { Appear } from 'mdx-deck';
     <p style={{ fontStyle: 'italic' }}>Say what!?</p>
   </div>
 </div>
+
+---
+
+# Sound familiar?
 
 ---
