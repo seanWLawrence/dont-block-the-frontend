@@ -1,31 +1,165 @@
 # Don't block the frontend!
 
-GraphQL Mocking
+GraphQL Mockings
 
 ---
 
 # Traditional workflow
 
+---
+
 import { Appear } from 'mdx-deck';
 
-<ul>
-  <li>Frontend requests an API interface</li>
-  <Appear>
-    <li>Backend builds its</li>
-    <li>Frontend requests changes</li>
-    <li>(Frontend blocked!) Backend makes changes</li>
-    <li>Repeat</li>
-  </Appear>
-</ul>
+<div>
+  <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+    <Appear>
+      <div
+        style={{
+          maxWidth: '30%',
+          minWidth: 500,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: 50,
+          flexDirection: 'column',
+        }}
+      >
+        <img src="./images/frank.png" />
+        <Appear>
+          <p style={{ fontStyle: 'italic' }}>
+            Hey Becky, I need to add something to our API. Can you help?
+          </p>
+        </Appear>
+      </div>
+      <div
+        style={{
+          maxWidth: '30%',
+          minWidth: 500,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: 50,
+          flexDirection: 'column',
+        }}
+      >
+        <img src="./images/becky.png" />
+        <Appear>
+          <p style={{ fontStyle: 'italic' }}>
+            Duh, man! I'll get on that right now!
+          </p>
+        </Appear>
+      </div>
+    </Appear>
+  </div>
+</div>
 
 ---
 
-# Sound familiar?
-
-```jsx
-<CodeSnippet />
-```
+<div>
+  <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+    <Appear>
+      <div
+        style={{
+          maxWidth: '30%',
+          minWidth: 500,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: 50,
+          flexDirection: 'column',
+        }}
+      >
+        <img src="./images/frank.png" />
+        <Appear>
+          <p style={{ fontStyle: 'italic' }}>Thanks! Here's what I need...</p>
+        </Appear>
+      </div>
+      <div
+        style={{
+          maxWidth: '30%',
+          minWidth: 500,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: 50,
+          flexDirection: 'column',
+        }}
+      >
+        <img src="./images/becky.png" />
+        <Appear>
+          <p style={{ fontStyle: 'italic' }}>
+            Dope, son! Give me a week to knock this out!
+          </p>
+        </Appear>
+      </div>
+    </Appear>
+  </div>
+</div>
 
 ---
 
-# The end
+# And we wait...
+
+---
+
+<div>
+  <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+    <Appear>
+      <div
+        style={{
+          maxWidth: '30%',
+          minWidth: 500,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: 50,
+          flexDirection: 'column',
+        }}
+      >
+        <img src="./images/becky.png" />
+        <Appear>
+          <p style={{ fontStyle: 'italic' }}>Yo! I'm done!</p>
+        </Appear>
+      </div>
+      <div
+        style={{
+          maxWidth: '30%',
+          minWidth: 500,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: 50,
+          flexDirection: 'column',
+        }}
+      >
+        <img src="./images/frank.png" />
+        <Appear>
+          <p style={{ fontStyle: 'italic' }}>
+            Thanks! Can we change a few things though?
+          </p>
+        </Appear>
+      </div>
+    </Appear>
+  </div>
+</div>
+
+---
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <div
+    style={{
+      maxWidth: '30%',
+      minWidth: 500,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: 50,
+      flexDirection: 'column',
+    }}
+  >
+    <img src="./images/becky.png" />
+    <p style={{ fontStyle: 'italic' }}>Say what!?</p>
+  </div>
+</div>
+
+---
