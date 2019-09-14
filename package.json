@@ -1,12 +1,31 @@
 {
   "name": "dont-block-the-frontend",
+  "author": {
+    "name": "Sean W. Lawrence",
+    "url": "https://slawrence.tech"
+  },
+  "description": "Slides for the Don't block the frontend! GraphQL Mocking presentation.",
+  "homepage": "https://github.com/seanWLawrence/dont-block-the-frontend",
+  "private": false,
+  "readme": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seanWLawrence/dont-block-the-frontend.git",
+    "directory": "src"
+  },
+  "keywords": [
+    "graphql",
+    "mock"
+  ],
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx --out-dir public && mv images public/images"
+    "start": "mdx-deck index.mdx",
+    "build-slides": "mdx-deck build index.mdx --out-dir public",
+    "copy-images-to-public-dir": "mv src/images public/images",
+    "build": "yarn build-slides && yarn copy-images-to-public-dir"
   },
   "devDependencies": {
     "mdx-deck": "^2"
