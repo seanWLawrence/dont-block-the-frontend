@@ -6,7 +6,7 @@
   "dependencies": {},
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx --out-dir public"
+    "build": "mdx-deck build deck.mdx --out-dir public && mv images public/images"
   },
   "devDependencies": {
     "mdx-deck": "^2"
