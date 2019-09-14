@@ -1,3 +1,5 @@
+import { Appear, Notes } from 'mdx-deck';
+
 export const theme = {
   fonts: {
     body: 'Roboto, sans-serif',
@@ -7,22 +9,16 @@ export const theme = {
     text: 'white',
     background: '#e535ab',
     primary: 'blue',
-  },
-  styles: {
-    root: {
-      margin: 0,
-    },
+    code: 'white',
   },
 };
 
 <div style={{ background: 'white' }}>
+  <h1 style={{ color: '#e535ab', padding: '2em', paddingBottom: 0 }}>
+    Don't block the frontend!
+  </h1>
+  <h3 style={{ color: '#444' }}>GraphQL Mocking</h3>
   <Appear>
-    <div>
-      <h1 style={{ color: '#e535ab', padding: '2em', paddingBottom: 0 }}>
-        Don't block the frontend!
-      </h1>
-      <h3 style={{ color: '#444' }}>GraphQL Mocking</h3>
-    </div>
     <p
       style={{
         color: '#444',
@@ -44,29 +40,25 @@ export const theme = {
 
 ---
 
-import { Appear } from 'mdx-deck';
-
 <div>
   <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+    <div
+      style={{
+        maxWidth: '30%',
+        minWidth: 500,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 50,
+        flexDirection: 'column',
+      }}
+    >
+      <img src="./images/frank.png" />
+      <p style={{ fontStyle: 'italic' }}>
+        Hey Becky, I need to add something to our API. Can you help?
+      </p>
+    </div>
     <Appear>
-      <div
-        style={{
-          maxWidth: '30%',
-          minWidth: 500,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          padding: 50,
-          flexDirection: 'column',
-        }}
-      >
-        <img src="./images/frank.png" />
-        <Appear>
-          <p style={{ fontStyle: 'italic' }}>
-            Hey Becky, I need to add something to our API. Can you help?
-          </p>
-        </Appear>
-      </div>
       <div
         style={{
           maxWidth: '30%',
@@ -81,7 +73,7 @@ import { Appear } from 'mdx-deck';
         <img src="./images/becky.png" />
         <Appear>
           <p style={{ fontStyle: 'italic' }}>
-            Duh, man! I'll get on that right now! 👌
+            For sure! I'll get on that right now! 👌
           </p>
         </Appear>
       </div>
@@ -93,23 +85,21 @@ import { Appear } from 'mdx-deck';
 
 <div>
   <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+    <div
+      style={{
+        maxWidth: '30%',
+        minWidth: 500,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 50,
+        flexDirection: 'column',
+      }}
+    >
+      <img src="./images/frank.png" />
+      <p style={{ fontStyle: 'italic' }}>Thanks! Here's what I need...</p>
+    </div>
     <Appear>
-      <div
-        style={{
-          maxWidth: '30%',
-          minWidth: 500,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          padding: 50,
-          flexDirection: 'column',
-        }}
-      >
-        <img src="./images/frank.png" />
-        <Appear>
-          <p style={{ fontStyle: 'italic' }}>Thanks! Here's what I need...</p>
-        </Appear>
-      </div>
       <div
         style={{
           maxWidth: '30%',
@@ -124,7 +114,7 @@ import { Appear } from 'mdx-deck';
         <img src="./images/becky.png" />
         <Appear>
           <p style={{ fontStyle: 'italic' }}>
-            Dope, son! Give me a week to knock this out! 👊
+            You got it, pal! Give me a week to knock this out! 👊
           </p>
         </Appear>
       </div>
@@ -133,9 +123,10 @@ import { Appear } from 'mdx-deck';
 </div>
 
 ---
+
+<h1> Aaaaaaaand we wait...</h1>
 
 <Appear>
-  <h1> Aaaaaaaand we wait...</h1>
   <h2> One week later...</h2>
 </Appear>
 
@@ -143,23 +134,21 @@ import { Appear } from 'mdx-deck';
 
 <div>
   <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+    <div
+      style={{
+        maxWidth: '30%',
+        minWidth: 500,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 50,
+        flexDirection: 'column',
+      }}
+    >
+      <img src="./images/becky.png" />
+      <p style={{ fontStyle: 'italic' }}>Hey Frank! I'm done! ✅</p>
+    </div>
     <Appear>
-      <div
-        style={{
-          maxWidth: '30%',
-          minWidth: 500,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          padding: 50,
-          flexDirection: 'column',
-        }}
-      >
-        <img src="./images/becky.png" />
-        <Appear>
-          <p style={{ fontStyle: 'italic' }}>Yo! I'm done! ✅</p>
-        </Appear>
-      </div>
       <div
         style={{
           maxWidth: '30%',
@@ -209,6 +198,8 @@ import { Appear } from 'mdx-deck';
 
 <img src="./images/yeah.jpg" />
 
+🌽
+
 ---
 
 # How about...
@@ -253,11 +244,81 @@ import { Appear } from 'mdx-deck';
 
 # Task
 
-Build a spaceship 🚀
+Build a quiz app called "How Canadian Are You?"
 
 ---
 
 # Analyze the problem
+
+<Notes>Ask: What data do we need?</Notes>
+
+---
+
+- Questions
+  - Title
+  - Options
+    - Canadian "points"
+  - Answer
+- Resulting score
+
+---
+
+# Organize the data
+
+<Notes>Ask: What's the easiest way to structure our data?</Notes>
+
+---
+
+```graphql
+type Question {
+  title: String!
+  options: [Option!]!
+}
+
+type Option {
+  title: String!
+  canadianScore: Int!
+}
+
+type User {
+  totalCanadianScore: Int
+}
+```
+
+---
+
+# Add fake data
+
+<Notes>How would you mock this out in plain english?</Notes>
+
+---
+
+```javascript
+let questions = () => [
+  {
+    title: 'How do you pronounce the word "about"?',
+    options: [
+      { title: 'About', canadianScore: 0 },
+      { title: 'Aboot', canadianScore: 1 },
+      { title: 'Abooooot, eh!', canadianScore: 2 },
+    ],
+  },
+];
+```
+
+---
+
+```javascript
+let user = () => ({
+  totalCanadianScore: 5,
+});
+```
+
+---
+
+# Replace fake data with real data
+
+_Asynchronously_
 
 ---
 
@@ -267,9 +328,60 @@ Build a spaceship 🚀
 
 ---
 
+- Last minute changes
+- Complexity
+- Forgotten mocks
+- Miscommunication
+- "Extra" work
+
+---
+
 <div style={{ background: 'white', padding: '2em', minWidth: 700 }}>
   <h1 style={{ color: '#e535ab' }}>Tips</h1>
 </div>
+
+---
+
+# Be lazy 🛌
+
+<em>
+  "I will always choose a lazy person to do a difficult job,
+  <br />
+  because a lazy person will find an easy way to do it."
+</em>
+
+_Bill Gates, probably_
+
+---
+
+- Use packages like 'faker'
+- Don't be clever
+- Simplify the API
+
+---
+
+# Be even lazier 😴
+
+---
+
+- Use GraphQL mocking packages, like:
+  - [`graphql-faker`](https://github.com/APIs-guru/graphql-faker)
+  - [`graphql-tools`](https://www.apollographql.com/docs/graphql-tools/mocking/)
+    (Apollo only)
+
+---
+
+<img src="./images/what.png" />
+
+---
+
+# Have fun with it 🕺
+
+```javascript
+let user = () => ({
+  favoriteBand: 'Nickelback',
+});
+```
 
 ---
 
@@ -278,6 +390,11 @@ Build a spaceship 🚀
   <p style={{ color: '#e535ab' }}>
     GitHub: <a href="https://github.com/seanwlawrence">@seanWLawrence</a>
   </p>
+  <p style={{ color: '#e535ab' }}>
+    Slides:{' '}
+    <a href="https://github.com/seanwlawrence/dont-block-the-frontend">
+      bit.ly/dont-block-the-frontend
+    </a>
+  </p>
+  ✌️
 </div>
-
----
