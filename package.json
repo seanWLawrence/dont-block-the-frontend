@@ -22,10 +22,8 @@
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "start": "mdx-deck index.mdx",
-    "build-slides": "mdx-deck build index.mdx --out-dir public",
-    "copy-images-to-public-dir": "mv src/images public/images",
-    "build": "yarn build-slides && yarn copy-images-to-public-dir"
+    "start": "make start",
+    "build": "make build"
   },
   "devDependencies": {
     "mdx-deck": "^2"
