@@ -1,16 +1,15 @@
-# Don't block the frontend!
+# Don't block the frontend
 
----
+This repo contains the slides for the "Don't block the frontend! GraphQL
+Mocking" talk on Sept. 23rd, '19.
 
-GraphQL Mocking
-
-Date: September 23rd, 2019
-
-This talk covers best practices for leveraging GraphQL’s strong type system to:
+The talk covers best practices for leveraging GraphQL’s strong type system to:
 
 - Speed up GraphQL development
 - Improve communication with mocks
 - Simplify API architecture
 
-- [Slides](bit.ly/dont-block-the-frontend)
+## Resources
+
+- [Slides](https://bit.ly/dont-block-the-frontend)
 - TODO Video
