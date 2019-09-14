@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
-    "gatsby": "2.14.7",
-    "mdx-deck": "^2"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx"
+  },
+  "devDependencies": {
+    "gatsby": "2.14.7",
+    "mdx-deck": "^2",
+    "mdx-deck-code-surfer": "^0.5.5",
+    "raw-loader": "^3.1.0",
+    "styled-components": "^4.3.2"
   }
 }

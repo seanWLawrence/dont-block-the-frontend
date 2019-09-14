@@ -1,0 +1,13 @@
+type Question {
+  title: String!
+  options: [Option!]!
+}
+
+type Option {
+  title: String!
+  canadianScore: Int!
+}
+
+type User {
+  totalCanadianScore: Int
+}

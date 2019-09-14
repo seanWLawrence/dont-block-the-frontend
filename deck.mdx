@@ -1,17 +1,12 @@
-import { Appear, Notes } from 'mdx-deck';
+import { Appear, Notes, Head } from 'mdx-deck';
+import syntaxHighlight from '@mdx-deck/themes/syntax-highlighter-prism';
+import customTheme from './theme';
 
-export const theme = {
-  fonts: {
-    body: 'Roboto, sans-serif',
-    monospace: '"Roboto Mono", monospace',
-  },
-  colors: {
-    text: 'white',
-    background: '#e535ab',
-    primary: 'blue',
-    code: 'white',
-  },
-};
+export const themes = [syntaxHighlight, customTheme];
+
+<Head>
+  <title>Don't block the frontend!</title>
+</Head>
 
 <div style={{ background: 'white' }}>
   <h1 style={{ color: '#e535ab', padding: '2em', paddingBottom: 0 }}>
@@ -278,12 +273,10 @@ type Question {
   title: String!
   options: [Option!]!
 }
-
 type Option {
   title: String!
   canadianScore: Int!
 }
-
 type User {
   totalCanadianScore: Int
 }
